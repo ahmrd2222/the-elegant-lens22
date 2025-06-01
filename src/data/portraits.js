@@ -1,7 +1,7 @@
 const portraitData = {
-  title: "Portrait Photography",
+  title: "Portrait Photograppp",
   description: "Capturing the essence and personality of each individual in beautiful settings",
-  coverImage: "https://images.pexels.com/photos/32353658/pexels-photo-32353658.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+  coverImage: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   subcategories: [
     {
       id: "nature-portraits",
