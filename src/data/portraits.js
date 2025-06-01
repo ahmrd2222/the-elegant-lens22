@@ -23,7 +23,7 @@ const portraitData = {
         },
         {
           id: "np-3",
-          src: "https://images.pexels.com/photos/1066116/pexels-photo-1066116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          src: "https://images.pexels.com/photos/32353658/pexels-photo-32353658.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
           alt: "Woman in flower field",
           description: "Spring portrait in a flower field"
         },
