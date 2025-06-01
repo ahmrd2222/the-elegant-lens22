@@ -62,7 +62,7 @@ const Home = () => {
           >
             <h1 className="text-4xl md:text-6xl font-bold mb-6">Capturing Life's Beautiful Moments</h1>
             <p className="text-lg md:text-xl max-w-2xl mx-auto mb-8">
-              Professional photography services for portraits, events, and couples
+              Professional photography services for portraits, events, and couples   
               by Ahmed_Alhalili.
             </p>
             <a 
