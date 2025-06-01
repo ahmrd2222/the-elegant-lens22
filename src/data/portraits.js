@@ -1,39 +1,43 @@
 const portraitData = {
-import { useEffect, useState } from 'react';
-import portraitData from '../data/portraits';
-
-const PAGE_SIZE = 3;
-
-export default function PortraitGallery() {
-  const allPhotos = portraitData.subcategories[0].photos; //
-  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
-
-  const loadMore = () => {
-    setVisibleCount(prev => Math.min(prev + PAGE_SIZE, allPhotos.length));
-  };
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 100) {
-        loadMore();
-      }
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  return (
-    <div className="gallery-grid">
-      {allPhotos.slice(0, visibleCount).map((photo) => (
-        <div key={photo.id} className="photo-card">
-          <img src={photo.src} alt={photo.alt} />
-          <p>{photo.description}</p>
-        </div>
-      ))}
-    </div>
-  );
-}
-
+  title: "Portrait Photography",
+  description: "Capturing the essence and personality of each individual in beautiful settings",
+  coverImage: "https://images.pexels.com/photos/32353658/pexels-photo-32353658.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+  subcategories: [
+    {
+      id: "nature-portraits",
+      title: "Nature Portraits",
+      description: "Beautiful portraits set in natural environments",
+      coverImage: "https://images.pexels.com/photos/32353658/pexels-photo-32353658.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+      photos: [
+        {
+          id: "np-1",
+          src: "https://images.pexels.com/photos/32353656/pexels-photo-32353656.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+          alt: "Woman in green forest",
+          description: "Portrait session in a lush green forest"
+        },
+        {
+          id: "np-2",
+          src: "https://images.pexels.com/photos/32353655/pexels-photo-32353655.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+          alt: "Man by the lake",
+          description: "Sunset portrait by the lake"
+        },
+        {
+          id: "np-3",
+          src: "https://images.pexels.com/photos/32353658/pexels-photo-32353658.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+          alt: "Woman in flower field",
+          description: "Spring portrait in a flower field"
+        },
+        {
+          id: "np-4",
+          src: "https://images.pexels.com/photos/1435517/pexels-photo-1435517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          alt: "Woman in mountains",
+          description: "Mountain adventure portrait"
+        },
+        {
+          id: "np-5",
+          src: "https://images.pexels.com/photos/2468339/pexels-photo-2468339.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+          alt: "Man in autumn forest",
+          description: "Fall colors portrait session"
 
       id: "urban-portraits",
       title: "Urban Portraits",
