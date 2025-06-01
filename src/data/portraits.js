@@ -11,7 +11,7 @@ const portraitData = {
       photos: [
         {
           id: "np-1",
-          src: "https://images.pexels.com/photos/32353658/pexels-photo-32353658.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+          src: "https://images.pexels.com/photos/32353656/pexels-photo-32353656.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
           alt: "Woman in green forest",
           description: "Portrait session in a lush green forest"
         },
