@@ -45,7 +45,7 @@ const Home = () => {
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-black opacity-40 z-10"></div>
           <motion.img
-            src="https://images.pexels.com/photos/1261731/pexels-photo-1261731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            src="https://images.pexels.com/photos/9704399/pexels-photo-9704399.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt="Hero background"
             className="w-full h-full object-cover"
             initial={{ scale: 1.1 }}
@@ -62,7 +62,8 @@ const Home = () => {
           >
             <h1 className="text-4xl md:text-6xl font-bold mb-6">Capturing Life's Beautiful Moments</h1>
             <p className="text-lg md:text-xl max-w-2xl mx-auto mb-8">
-              Professional photography services for portraits, events, and couples.
+              Professional photography services for portraits, events, and couples
+              by Ahmed_Alhalili.
             </p>
             <a 
               href="#categories"
